@@ -1333,7 +1333,7 @@ a:hover {
    WRAPPER / ELEMENT
    ========================================================================== */
 .wrapper {
-  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
@@ -1398,10 +1398,7 @@ header.header {
   transition: transform 0.3s ease;
 }
 header.header div.wrapper {
-  box-sizing: border-box;
   height: 100px;
-  margin: 0;
-  width: 100%;
   padding: 20px 80px;
   display: flex;
   flex-direction: column;
@@ -2253,10 +2250,10 @@ html.header-is-hidden .header {
 
 img.robot {
   position: absolute;
-  top: 50px;
+  top: 0px;
   right: 0;
-  width: 80%;
   z-index: -11;
+  width: 80%;
 }
 
 .bg {
@@ -2305,10 +2302,6 @@ h1 span {
 
 .hero .wrapper {
   margin-top: 150px;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  height: 100%;
 }
 .hero .wrapper h2 {
   width: -moz-fit-content;
@@ -2380,7 +2373,7 @@ a.button_projet svg {
    PROJETS
 ========================================================= */
 .projets {
-  padding-top: 280px;
+  padding-top: 350px;
   margin-bottom: 100px;
 }
 
@@ -2554,13 +2547,8 @@ a.button_projet svg {
 ========================================================= */
 .a-propos {
   margin-top: 360px;
-  width: 100%;
-  box-sizing: border-box;
   padding-top: 125px;
   padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
   background: #ebe9e4;
   color: #000;
 }
