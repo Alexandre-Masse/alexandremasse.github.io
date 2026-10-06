@@ -2253,7 +2253,12 @@ img.robot {
   top: 0px;
   right: 0;
   z-index: -11;
-  width: 80%;
+  width: 60%;
+}
+@media (max-width: 2300px) {
+  img.robot {
+    width: 80%;
+  }
 }
 
 .bg {
@@ -2267,10 +2272,15 @@ img.robot {
 
 .shape-third {
   position: absolute;
-  top: clamp(10%, 40vw + 7%, 85%);
+  top: 700px;
   left: 0px;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 2300px) {
+  .shape-third {
+    top: clamp(10%, 40vw + 7%, 85%);
+  }
 }
 
 .top-label {
@@ -2549,7 +2559,6 @@ a.button_projet svg {
   margin-top: 360px;
   padding-top: 125px;
   padding-bottom: 80px;
-  background: #ebe9e4;
   color: #000;
 }
 .a-propos .wrapper {
