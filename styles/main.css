@@ -3034,4 +3034,69 @@ a.button_projet svg {
     line-height: 23px;
   }
 }
+/* ==========================================================================
+   video / component
+   ========================================================================== */
+.video {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  cursor: pointer;
+}
+.video img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.video .icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+  transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition-property: opacity, transform;
+  transform-origin: 0 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.video .icon use {
+  fill: var(--color-btn-background-hover);
+}
+.is-video-ready .video .icon {
+  opacity: 1;
+}
+.video:hover .icon {
+  transform: scale(0.8) translate(-50%, -50%);
+}
+.video .video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  background-color: #f2f2ed;
+  padding: var(--spacing-md) calc(var(--spacing-md) / 2);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.section--full {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.section__title {
+  grid-template: 2/-2;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
